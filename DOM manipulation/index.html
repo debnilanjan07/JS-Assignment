@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="text" class="text">Text</div>
+    <h1>Dom Manipulation</h1>
+    <div class="box">Box</div>
+    <h1 id="hello">Hello </h1>
+    <h1 id="h">Hello</h1>
+    <div class="flex-container">
+        <div class="card">
+            <h1>Card 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, aperiam.</p>
+        </div>
+        <div class="card" id="card1">
+            <h1>Card 2</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, error.
+            </p>
+        </div>
+        <div class="card">
+            <h1>Card 3</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, corrupti.
+            </p>
+        </div>
+    </div>
+
+    <button id="btn" onclick="changeOnClick()">Change Flex dirction</button>
+    <h1 id="welcome" class="welcome">Hello World!!</h1>
+    <button onclick="changePage()" class="btn" id="btn">Click Here</button>
+
+    <br>
+    <br>
+    <span class="hh" id="hh">00</span>:
+    <span class="mm" id="mm">00</span>:
+    <span class="ss" id="ss">00</span>
+    <br><br>
+    <div class="dropdown">
+
+        <label for="year">Year</label>
+        <select name="" onchange="yearChange()" id="yearSelect">
+            <option value="2015-2016">2015-2016</option>
+            <option value="2016-2017">2016-2017</option>
+            <option value="2017-2018">2017-2018</option>
+            <option value="2018-2019">2018-2019</option>
+            <option value="2019-2020">2019-2020</option>
+        </select>
+        <p>the selected year is :<span id="year"></span></p>
+    </div>
+
+    <p>Document Object: The document object represent a web page that is loaded
+        in the browser. By accessing the document object, we can access the
+        element in the HTML page. With the help of document objects,
+        we can add dynamic content to our web page. The document object
+        can be accessed with a window.document or just document.</p>
+    <p>Window Object: The window object is the topmost object of the DOM hierarchy.
+        It represents a browser window or frame that displays the contents of the
+        webpage. Whenever a window appears on the screen to display the contents
+        of the document, the window object is created. </p>
+
+    <br>
+    <br>
+    <form action="./index.html" class="form">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="email">Email:</label>
+        <input oninput="emailCheck()" type="email" name="email" id="email">
+        <span id="emailcheck" class="check">domain should be prepbytes.com!!</span><br><br>
+        <label for="phoneno">Phone No:</label>
+        <input oninput="numberCheck()" type="number" name="phoneno" id="phoneno">
+        <span class="check" id="digitcheck">number should have10 digits!!</span>
+        <span class="check" id="startcheck">number should start with 91 !!</span><br><br>
+        <label for="byear">Birth Year:</label>
+        <input oninput="bYearCheck()" type="number" name="byear" id="byear">
+        <span class="check" id="byearcheck">birth year should be greater than 1995!!</span><br><br>
+        <input type="submit" name="submit" id="submit">
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>

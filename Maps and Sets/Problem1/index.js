@@ -1,5 +1,6 @@
 /*"Problem:1
-You are given a string (STR) of length N, consisting of only the lower case English alphabet.
+You are given a string (STR) of length N, consisting of only the lower case
+ English alphabet.
 Your task is to remove all the duplicate occurrences of characters in the string.
 
 Input:
